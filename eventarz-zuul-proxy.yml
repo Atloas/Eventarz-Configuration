@@ -1,0 +1,13 @@
+spring:
+  cloud.loadbalancer.ribbon.enabled: false
+server:
+  port: 8082
+  use-forward-headers: true
+zuul:
+  debug.request: true
+  add-proxy-headers: true
+  sensitive-headers:
+  routes:
+    application:
+      path: /**
+      serviceId: eventarz-application
