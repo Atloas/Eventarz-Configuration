@@ -14,4 +14,4 @@ logging:
           drivers:
             bolt:
               request:
-                BoltRequest=DEBUG:
+                BoltRequest: DEBUG
