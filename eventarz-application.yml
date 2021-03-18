@@ -1,7 +1,0 @@
-server:
-  port: 8080
-  use-forward-headers: true
-  tomcat.protocol-header: X-Forwarded-Proto
-  tomcat.remote-ip-header: X-Forwarded-For
-spring:
-  cloud.loadbalancer.ribbon.enabled: false

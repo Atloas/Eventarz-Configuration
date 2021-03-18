@@ -1,0 +1,12 @@
+server:
+  use-forward-headers: true
+  tomcat:
+    protocol-header: X-Forwarded-Proto
+    remote-ip-header: X-Forwarded-For
+
+spring:
+  cloud.loadbalancer.ribbon.enabled: false
+
+eureka:
+  instance:
+    preferIpAddress: true
