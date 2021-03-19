@@ -1,4 +1,4 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: # TODO
+      defaultZone: http://ec2-18-218-194-112.us-east-2.compute.amazonaws.com
