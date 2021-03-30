@@ -1,5 +1,11 @@
 server:
   use-forward-headers: true
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore/eventarz.p12
+    key-store-password: password
+    key-alias: eventarz
+    enabled: true
 
 zuul:
   debug.request: true
