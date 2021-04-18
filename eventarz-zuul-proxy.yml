@@ -7,7 +7,11 @@ server:
     key-alias: eventarz
     enabled: true
 
+ribbon:
+  ReadTimeout: 60000
+
 zuul:
+  ignoredServices: '*'
   debug.request: true
   add-proxy-headers: true
   sensitive-headers:
@@ -15,3 +19,5 @@ zuul:
     application:
       path: /**
       serviceId: eventarz-application
+
+eventarz-application.ribbon.NFLoadBalancerRuleClassName: com.agh.EventarzZuulZerver.StickySessionRule

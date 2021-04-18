@@ -3,7 +3,3 @@ server:
   tomcat:
     protocol-header: X-Forwarded-Proto
     remote-ip-header: X-Forwarded-For
-
-eureka:
-  instance:
-    preferIpAddress: true
