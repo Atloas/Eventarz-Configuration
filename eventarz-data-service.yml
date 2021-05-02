@@ -1,7 +1,7 @@
 spring:
   data:
     neo4j:
-      uri: "bolt://ec2-3-141-19-190.us-east-2.compute.amazonaws.com:7687"
+      uri: "bolt://ec2-3-14-253-242.us-east-2.compute.amazonaws.com:7687"
       username: "neo4j"
       password: "i-0fb5191d82a056e60"
 
