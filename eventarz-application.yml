@@ -3,3 +3,5 @@ server:
   tomcat:
     protocol-header: X-Forwarded-Proto
     remote-ip-header: X-Forwarded-For
+
+logging.level.org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
