@@ -22,3 +22,10 @@ zuul:
     gateway:
       path: /gateway/**
       serviceId: eventarz-gateway
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          netflix: trace
