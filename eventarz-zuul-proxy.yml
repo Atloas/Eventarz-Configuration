@@ -17,7 +17,8 @@ zuul:
   sensitive-headers:
   routes:
     application:
-      path: /**
+      path: /
       serviceId: eventarz-application
-
-eventarz-application.ribbon.NFLoadBalancerRuleClassName: com.agh.EventarzZuulZerver.StickySessionRule
+    gateway:
+      path: /**
+      serviceId: eventarz-gateway
