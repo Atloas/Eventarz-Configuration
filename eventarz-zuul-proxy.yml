@@ -20,5 +20,5 @@ zuul:
       path: /
       serviceId: eventarz-application
     gateway:
-      path: /**
+      path: /gateway/**
       serviceId: eventarz-gateway
