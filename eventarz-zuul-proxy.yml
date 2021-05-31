@@ -16,12 +16,12 @@ zuul:
   add-proxy-headers: true
   sensitive-headers:
   routes:
-    application:
-      path: /
-      serviceId: eventarz-application
     gateway:
       path: /gateway/**
       serviceId: eventarz-gateway
+    application:
+      path: /**
+      serviceId: eventarz-application
 
 logging:
   level:
