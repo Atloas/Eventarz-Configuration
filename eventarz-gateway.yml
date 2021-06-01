@@ -2,18 +2,3 @@ eureka:
   instance:
     preferIpAddress: true
 
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: data-service
-          uri: lb://eventarz-data-service/
-          predicates:
-            - Path=/gateway/**
-          filters:
-            - RewritePath=/gateway/(?<segment>.*), /$\{segment}
-
-logging:
-  level:
-    org.springframework.cloud.gateway: DEBUG
-    reactor.netty.http.client: DEBUG
